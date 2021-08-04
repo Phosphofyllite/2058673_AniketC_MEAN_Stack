@@ -1,17 +1,3 @@
-/* var clientname = document.getElementById("clientname").value;
-var projectname = document.getElementById("projectname").value;
-var budget = document.getElementById("budget").value;
-
-
-let budg = {ClientName:clientname,ProjectName:projectname,age:budget};
-
-localStorage.setItem('budg', JSON.stringify(budg));
-
-var retrievedBudg = localStorage.getItem('budg');
-
-console.log('retrievedBudg: ', JSON.parse(retrievedBudg));
- */
-
 function storeData() {
     let clientname = document.getElementById("clientname").value;
     let projectname = document.getElementById("projectname").value;
