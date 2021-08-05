@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Blogging
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+    
+    
+    
+    
+    </style>
+    <script src="simply_blogging.js"></script>
+</head>
+<body style="background-color:teal">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#!">Simply Blogging</a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#!">Add Blog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+    
+
+
+        <br>
+        <br>
+        <br>
+        <div class = "container" style="margin: auto;">
+            <div class="col-6" style="margin: auto; background-color: yellowgreen; border-radius: 25px; padding: 10px;">
+            <form>
+                <div class="form-group">
+                    <div class="col-xs-2">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" id="title" placeholder="Blog title" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <label for="content">Blog content</label>
+                  <input type="text" class="form-control" id="content" placeholder="Blog content" required>
+                </div>
+                <div class="form-group">
+                    <label for="imageurl">Image URL</label>
+                    <input type="text" class="form-control" id="imageurl" placeholder="Image URL" required>
+                  </div>
+                  <button type="submit" class="btn btn-success" onclick="addData()">Add Blog</button>
+              </form>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row" id="cards" style= "margin: auto;">
+                
+
+               <!-- <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="/images/pathToYourImage.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                      </p>
+                    </div>
+                </div>  
+               </div> -->
+
+            </div>
+
+        </div>
+      
+</body>
+</html>
