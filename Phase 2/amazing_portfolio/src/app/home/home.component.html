@@ -1,0 +1,52 @@
+<div *ngIf = "flagLogin">
+    <h2>Login Page using Model Driven Form</h2>
+    <form  [formGroup] = "loginRef" (ngSubmit) = "checkUser()">
+        <label>Username</label>
+        <input type="text" formControlName = "user" /> <br>
+        <label>Password</label>
+        <input type="password" formControlName = "pass"  /> <br>
+        <input type="submit" value="Submit" [disabled]="!loginRef.valid"/>
+        <input type="reset"  value="Reset">
+        <br>
+        {{loginmsg}}
+    </form>
+    <input type="button" value="Sign Up" (click) = "signUp()"/>
+</div>
+
+<div *ngIf = "flagRegister">
+    <form [formGroup] = "registerRef"  (ngSubmit) = "register()">
+        <label>Username</label>
+        <input type="text" formControlName = "enterUser" /> <br>
+        <label>Password</label>
+        <input type="password" formControlName = "enterPass" /> <br>
+        <label>First Name</label>
+        <input type="text" formControlName = "firstname" /> <br>
+        <label>Last Name</label>
+        <input type="text" formControlName = "lastname" /> <br>
+        <input type="submit" value="Submit" [disabled]="!registerRef.valid"/>
+        <input type="reset"  value="Reset">
+        <br>
+        
+    </form>
+</div>
+
+
+<div *ngIf = "flagPort">
+
+    <p>Welcome {{usrnm}}</p>
+    <form [formGroup] = "portRef"  (ngSubmit) = "addContact()">
+        <label>Contact Name</label>
+        <input type="text" formControlName = "contactName" /> <br>
+        <label>Phone No.</label>
+        <input type="text" formControlName = "phoneNum" /> <br>
+        <input type="submit" value="Submit" [disabled]="!portRef.valid"/>
+        <input type="reset"  value="Reset">
+        <br>
+            <table border = "1"><th>Contact Name</th><th>Phone Number</th>
+                <tr *ngFor = "let entry of entries">
+                    <td>{{entry.cName}}</td>
+                    <td>{{entry.pName}}</td>
+                </tr>
+            </table>
+    </form>
+</div>
