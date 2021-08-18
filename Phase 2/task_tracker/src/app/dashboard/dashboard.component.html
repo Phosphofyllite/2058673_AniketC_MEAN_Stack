@@ -1,0 +1,55 @@
+<div>
+    <form [formGroup] = "todoRef"  (ngSubmit) = "addData()" >
+        <label>ID</label>
+        <input type="text" formControlName = "id" /> <br>
+        <label>Name</label>
+        <input type="text" formControlName = "name" /> <br>
+        <label>Task</label>
+        <input type="text" formControlName = "task" /> <br>
+        <label>Deadline</label>
+        <input type="text" formControlName = "deadline" /> <br>
+        <input type="submit" value="Submit" [disabled]="!todoRef.valid" class="demo-button"/>
+        <input type="reset"  value="Reset">
+        <br>
+
+        
+    </form>
+</div>
+
+
+
+
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+    <!-- Position Column -->
+    <ng-container matColumnDef="todoID">
+      <th mat-header-cell *matHeaderCellDef>ID</th>
+      <td mat-cell *matCellDef="let element">{{element.tID}}</td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="todoName">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">{{element.tName}}</td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="todoTask">
+      <th mat-header-cell *matHeaderCellDef>Task</th>
+      <td mat-cell *matCellDef="let element">{{element.tTask}}</td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="todoDeadline">
+      <th mat-header-cell *matHeaderCellDef>Deadline</th>
+      <td mat-cell *matCellDef="let element">{{element.tDeadline}}</td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+
+
+
+
