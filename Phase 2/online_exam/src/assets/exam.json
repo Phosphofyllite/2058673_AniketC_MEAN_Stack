@@ -1,0 +1,11 @@
+[   {"question" : "capital of california?", "ans1": "sacramento", "ans2": "dallas", "ans3": "los angeles", "correctAns": "sacramento"},
+	{"question" : "capital of texas?", "ans1": "houston", "ans2": "san antonio", "ans3": "austin", "correctAns": "austin"},
+    {"question" : "what is Kiryu Kazuma also known as?", "ans1": "the dragon of dojima", "ans2": "5th chairman", "ans3": "the dragon of kansai", "correctAns": "the dragon of dojima"},
+    {"question" : "when did apex legends release?", "ans1": "jan 2020", "ans2": "feb 2019", "ans3": "may 2019", "correctAns": "feb 2019"},
+    {"question" : "when did nier automata release?", "ans1": "2017", "ans2": "2018", "ans3": "2019", "correctAns": "2017"},
+    {"question" : "whats the heaviest natural element?", "ans1": "uranium", "ans2": "tungsten", "ans3": "gold", "correctAns": "uranium"},
+    {"question" : "what are the spinning discs of material orbiting some black holes called?", "ans1": "plasma disks", "ans2": "event horizons", "ans3": "accretion disks", "correctAns": "accretion disks"},
+    {"question" : "what is the name given to a supermassive black hole with an accretion disk that outshines its galaxy?", "ans1": "pseudo-star", "ans2": "quasar", "ans3": "magnetar", "correctAns": "quasar"},
+    {"question" : "whats is the densest type of celestial body that is not a black hole?", "ans1": "sub-brown dwarf", "ans2": "neutron star", "ans3": "red dwarf star", "correctAns": "neutron star"},
+    {"question" : "what is the name of the paradox given to why we haven't found any evidence of aliens?", "ans1": "fermi paradox", "ans2": "fibonacci paradox", "ans3": "black hole paradox", "correctAns": "fermi paradox"}
+]
